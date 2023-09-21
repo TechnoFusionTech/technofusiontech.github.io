@@ -38,7 +38,7 @@
         function changeBackgroundColor() {
             document.body.style.backgroundColor = rainbowColors[currentIndex];
             currentIndex = (currentIndex + 1) % rainbowColors.length;
-            setTimeout(changeBackgroundColor, 1000); // Change color every 1 second
+            setTimeout(changeBackgroundColor, 10000); // Change color every 1 second
         }
 
         changeBackgroundColor(); // Start the color-changing loop
