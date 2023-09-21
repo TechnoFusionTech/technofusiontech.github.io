@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Tech Channel</title>
+    <style>
+        body {
+            transition: background-color 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Tech Channel</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.youtube.com/yourtechchannel" target="_blank">YouTube Channel</a></li>
+            <li><a href="https://www.youtube.com/yourtechchannel/videos" target="_blank">Video Library</a></li>
+            <li><a href="downloads/yourfile.pdf" download>Download Your File</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Latest Videos</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/yourtechchannel/video1" target="_blank">Video 1 Title</a></li>
+            <li><a href="https://www.youtube.com/yourtechchannel/video2" target="_blank">Video 2 Title</a></li>
+            <li><a href="https://www.youtube.com/yourtechchannel/video3" target="_blank">Video 3 Title</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Tech Channel</p>
+    </footer>
+    <script>
+        const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
+        let currentIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = rainbowColors[currentIndex];
+            currentIndex = (currentIndex + 1) % rainbowColors.length;
+            setTimeout(changeBackgroundColor, 1000); // Change color every 1 second
+        }
+
+        changeBackgroundColor(); // Start the color-changing loop
+    </script>
+</body>
+</html>
