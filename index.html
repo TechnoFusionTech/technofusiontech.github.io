@@ -5,7 +5,80 @@
     <title>Your Tech Channel</title>
     <style>
         body {
-            transition: background-color 1s ease-in-out;
+            font-family: Arial, sans-serif;
+            background-color: #1E90FF; /* Cool blue color */
+            color: #FFF; /* White text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333; /* Dark gray header background */
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #FF4500; /* Orange button color */
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #FF8C00; /* Darker orange on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
@@ -27,21 +100,10 @@
             <li><a href="https://www.youtube.com/yourtechchannel/video2" target="_blank">Video 2 Title</a></li>
             <li><a href="https://www.youtube.com/yourtechchannel/video3" target="_blank">Video 3 Title</a></li>
         </ul>
+        <button>Subscribe</button>
     </main>
     <footer>
         <p>&copy; 2023 Your Tech Channel</p>
     </footer>
-    <script>
-        const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
-        let currentIndex = 0;
-
-        function changeBackgroundColor() {
-            document.body.style.backgroundColor = rainbowColors[currentIndex];
-            currentIndex = (currentIndex + 1) % rainbowColors.length;
-            setTimeout(changeBackgroundColor, 10000); // Change color every 1 second
-        }
-
-        changeBackgroundColor(); // Start the color-changing loop
-    </script>
 </body>
 </html>
