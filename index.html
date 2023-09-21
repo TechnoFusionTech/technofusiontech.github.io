@@ -84,7 +84,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Tech Channel</h1>
+        <h1>TechnoFusionTech</h1>
     </header>
     <nav>
         <ul>
@@ -93,12 +93,25 @@
         </ul>
     </nav>
     <main>
-        <a href="https://www.youtube.com/@TechnoFusionTech?sub_confirmation=1"
-        <button>Subscribe</button>
+        <a href="https://www.youtube.com/@TechnoFusionTech?sub_confirmation=1">
+            <button>Subscribe</button>
         </a>
     </main>
     <footer>
-        <p>&copy; 2023 Your Tech Channel</p>
+        <p>TechnoFusionTech</p>
     </footer>
+    <script>
+        // JavaScript code for rainbow header color change
+        const header = document.querySelector('header');
+        const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF'];
+        let currentIndex = 0;
+
+        function changeHeaderColor() {
+            header.style.backgroundColor = rainbowColors[currentIndex];
+            currentIndex = (currentIndex + 1) % rainbowColors.length;
+        }
+
+        setInterval(changeHeaderColor, 1000); // Change color every 1 second
+    </script>
 </body>
 </html>
