@@ -5,11 +5,14 @@
     <title>Download Page</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #ffcccc, #99ff99);
             font-family: Arial, sans-serif;
+            background-color: #1E90FF; /* Same blue color as the main site */
+            color: #FFF; /* White text color */
+            margin: 0;
+            padding: 0;
         }
         h1 {
-            color: #6600cc;
+            font-size: 36px;
         }
         .container {
             max-width: 600px;
@@ -38,6 +41,9 @@
         a:hover {
             background: linear-gradient(to right, #ff6600, #0099cc);
         }
+        .back-button {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +52,9 @@
         <ul>
             <li><a href="download/rarreg.key" download>Winrar Key</a></li>
         </ul>
+        <a href="/"> <!-- Link to go back to the main site -->
+            <button class="back-button">Back to Main Site</button>
+        </a>
     </div>
 </body>
 </html>
